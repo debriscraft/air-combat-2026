@@ -1,5 +1,7 @@
 # AIR COMBAT 2026
 
+**v1.0** · 2026-11-17 · [Changelog](CHANGELOG.md) · [MIT](LICENSE)
+
 零依赖、单文件的 3D 空战 demo：**地形在 GPU 上逐像素光线步进，战机是体素生成的 3D 网格，
 HUD/特效/音效全部程序化生成**。没有 Three.js，没有引擎，没有任何外部资源，不需要构建。
 
@@ -100,6 +102,7 @@ index.html          完整版（单文件，可直接双击）
 index-32kb.html     32KB 版本
 shots/              截图
 LICENSE             MIT
+CHANGELOG.md        版本变更记录
 ```
 
 ## 关于
