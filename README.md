@@ -12,10 +12,9 @@ HUD/特效/音效全部程序化生成**。没有 Three.js，没有引擎，没�
 
 ## 在线试玩
 
-启用 GitHub Pages 后可直接玩：**https://debriscraft.github.io/air-combat-2026/**
-（Settings → Pages → Source 选 `main` / `root`）
+**https://debriscraft.github.io/air-combat-2026/** ← 直接用浏览器打开，手机可能跑不动（需要 WebGL2）
 
-本地：下载 `index.html` 双击打开即可，无需服务器。
+本地：下载 `index.html` 双击打开即可，无需服务器、无需构建。
 
 ## 操作
 
