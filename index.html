@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-<title>FIGHTER — 精灵堆叠空战 · 完整版</title>
+<title>AIR COMBAT 2026 v1.0 — WebGL 3D 空战</title>
 <style>
 html,body{margin:0;height:100%;background:#04070e;overflow:hidden;
   font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Courier New",monospace;
@@ -117,6 +117,7 @@ const hudc=$('#hud'), HX=hudc.getContext('2d');
 let W=1280,H=720,TW=1280,TH=720,OVK=1,SCL=1;   // 世界渲染尺寸 = 画布分辨率（原生）
 cvs.width=W; cvs.height=H;
 const W0=480, H0=270;
+const VER='1.0';
 const TAU=Math.PI*2, D=Math.PI/180;
 const clamp=(v,a,b)=>v<a?a:v>b?b:v;
 const lerp=(a,b,t)=>a+(b-a)*t;
@@ -1500,6 +1501,7 @@ function drawHUD(t){
   T('KILLS '+S.kills+'  ·  '+['OFF','LITE','FULL'][P.hudMode],w-u*14,u*23,u*2.4,dim,'right',400);
   T('G '+S.g.toFixed(1)+(S.g>6.5?' ▲':''),w-u*14,h-u*10,u*2.6,S.g>6.5?warm:dim,'right',500);
   T(fps.toFixed(0)+' FPS  '+W+'×'+H,u*14,h-u*10,u*2.3,dim,'left',400);
+  T('v'+VER,w-u*14,h-u*10,u*2.3,dim,'right',400);
 
   /* 警告 */
   const warns=[];
